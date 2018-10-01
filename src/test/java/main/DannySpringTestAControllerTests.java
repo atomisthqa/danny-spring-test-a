@@ -31,7 +31,7 @@ public class DannySpringTestAControllerTests {
 	public void shouldReturnHello() throws Exception {
 		this.mockMvc.perform(get("/"))
 				.andExpect(status().isOk())
-				.andExpect(content().string(startsWith("Hello")));
+				.andExpect(content().string(startsWith("Bonjour")));
 	}
 
 	@Test
